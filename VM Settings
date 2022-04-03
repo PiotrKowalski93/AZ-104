@@ -1,2 +1,2 @@
 Add AD feature to VM:
-az vm extension set --name "" --publisher "" --resource-group "" --vm-name ""
+az vm extension set --name AADLoginForWindows --publisher Microsoft.Azure.ActiveDirectory --resource-group "" --vm-name ""
