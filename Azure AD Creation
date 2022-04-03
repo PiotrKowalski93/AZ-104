@@ -1,0 +1,12 @@
+Powershell:
+
+Install-Module -Name AzureAD
+Connect-AzureAD
+New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
+Add-AzureADGroupMember -ObjectId "XXXXXXXX" -RefObjectId "XXXXXXXXX"
+
+CLI:
+
+az ad group create --display-name Sales --mail-nickname Sales
+az ad group member check --group Sales --member-id xxxxxxxx-xxxx
+az ad group member add --group Sales --member-id xxxxxxxx-xxxx
